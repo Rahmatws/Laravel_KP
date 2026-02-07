@@ -1,0 +1,5 @@
+Query: select * from `items` where ((`code` like ? or `name` like ? or exists (select * from `categories` where `items`.`category_id` = `categories`.`id` and `name` like ?))) limit 1
+Bindings: ["%INJECTION%","%INJECTION%","%INJECTION%"]
+Input words: ["INJECTION"]
+Count: 10
+First Item: CUP INJECTION 380 ML OVAL
