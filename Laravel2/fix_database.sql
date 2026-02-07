@@ -18,6 +18,6 @@ SET has_imported = 0,
 WHERE email = 'rahmat@gmail.com';
 
 -- 4. Verifikasi hasil
-SELECT id, name, email, role, has_imported, has_viewed_details, has_viewed_stock 
+SELECT id, name, email, role, has_imported, has_details, has_viewed_stock 
 FROM users 
 WHERE email = 'rahmat@gmail.com';
